@@ -11,6 +11,8 @@ namespace EmployeeWageComputation
         static void Main(string[] args)
         {
             Console.WriteLine("WelCome To Emplyee Wage Compution");
+            CheckEmplyeePesentOrNot obj = new CheckEmplyeePesentOrNot();
+            obj.EmplyeeCheck();
             Console.ReadLine();
         }
     }
