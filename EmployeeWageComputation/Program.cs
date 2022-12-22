@@ -11,8 +11,8 @@ namespace EmployeeWageComputation
         static void Main(string[] args)
         {
             Console.WriteLine("WelCome To Emplyee Wage Compution");
-            CheckEmpDailyWage obj = new CheckEmpDailyWage();
-            obj.EmpDailyWage();
+            EmpPArtTimeAndWage obj = new EmpPArtTimeAndWage();
+            obj.EmpPartTWage();
             Console.ReadLine();
         }
     }
