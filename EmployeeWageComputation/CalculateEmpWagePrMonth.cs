@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputation
 {
-    class EmpPArtTimeAndWage
-    {
+    class CalculateEmpWagePrMonth
+    { 
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
         public const int EPM_RATE_PER_HOUR = 20;
-        public void EmpPartTWage()
+        public const int NUM_OF_WOKING_DAYS = 20;
+        public void EmpWagePrMonth()
         {
-            {
-                int empHrs = 0;        //veriable
-                int empWage = 0;       //veriable
 
+            int empHrs = 0, empWage = 0, totalEmpWage = 0;
+
+            for (int day = 0; day < NUM_OF_WOKING_DAYS; day++)
+            {
                 Random random = new Random();
                 int empCheck = random.Next(0, 3);
-
                 switch (empCheck)
                 {
                     case IS_PART_TIME:
@@ -33,9 +34,13 @@ namespace EmployeeWageComputation
                         break;
                 }
                 empWage = empHrs * EPM_RATE_PER_HOUR;
+                totalEmpWage += empWage;
                 Console.WriteLine("Emp Wage{0}", empWage);
             }
-        }
-    }
 
+            Console.WriteLine("Total Emp Wage : {0}", totalEmpWage);
+        }
+    
+    }
 }
+

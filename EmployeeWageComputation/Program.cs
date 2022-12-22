@@ -11,8 +11,8 @@ namespace EmployeeWageComputation
         static void Main(string[] args)
         {
             Console.WriteLine("WelCome To Emplyee Wage Compution");
-            EmpPArtTimeAndWage obj = new EmpPArtTimeAndWage();
-            obj.EmpPartTWage();
+            CalculateEmpWagePrMonth obj = new CalculateEmpWagePrMonth();
+            obj.EmpWagePrMonth();
             Console.ReadLine();
         }
     }
