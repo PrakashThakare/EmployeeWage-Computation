@@ -12,7 +12,7 @@ namespace EmployeeWageComputation
         {
             Console.WriteLine("WelCome To Emplyee Wage Compution");
             CalculateEmpWagePrMonth obj = new CalculateEmpWagePrMonth();
-            obj.EmpWagePrMonth();
+            obj.TotalWage();
             Console.ReadLine();
         }
     }
